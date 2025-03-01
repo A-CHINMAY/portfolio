@@ -74,7 +74,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <div className="relative h-screen">
+    <div id="home" className="relative h-screen">
       <div ref={containerRef} className="absolute inset-0" />
       <div className="relative z-10 flex items-center justify-center h-full text-center px-4">
         <div className="animate-fade-up">

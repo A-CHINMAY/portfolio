@@ -25,6 +25,19 @@
   @apply transition-transform duration-300 hover:scale-105;
 }
 
+.nav-link {
+  @apply relative font-medium text-gray-700 hover:text-primary transition-colors duration-300;
+}
+
+.nav-link::after {
+  content: '';
+  @apply absolute left-0 bottom-[-5px] h-[2px] w-0 bg-primary transition-all duration-300;
+}
+
+.nav-link:hover::after {
+  @apply w-full;
+}
+
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -36,4 +49,3 @@
 ::-webkit-scrollbar-thumb {
   @apply bg-primary rounded-full;
 }
-
